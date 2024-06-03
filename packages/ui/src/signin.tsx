@@ -3,7 +3,9 @@ import TextField from "@mui/material/TextField";
 import { Button, Card, Typography } from "@mui/material";
 import { signIn } from "next-auth/react";
 
-export function SignIn(props) {
+export function SignIn(props: {
+  onClick: (email: string, password: string) => void;
+}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 

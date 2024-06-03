@@ -1,0 +1,74 @@
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+    align-items: center;
+  }
+  
+  .wrapper {
+    width: 60%;
+    display: flex;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1.5rem;
+    border-radius: 20px;
+    background-color: white;
+  }
+  
+  .image {
+    border-radius: 20px 0 0 20px;
+    margin-top: 40px;
+    width: 50%;
+    height: 400px;
+    background: url("https://img.freepik.com/premium-vector/boy-studying-with-computer-books_113065-228.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .form {
+    border-radius: 0 20px 20px 0;
+    width: 50%;
+    padding: 1.5rem 2rem;
+  }
+  
+  .input {
+    margin-bottom: 14px;
+    width: 100%;
+  }
+  
+  .button {
+    background-color: #a435f0;
+    color: white;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      width: 80%;
+      height: auto;
+    }
+    
+    .image {
+      display: none;
+    }
+    
+    .form {
+      border-radius: 20px;
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .input {
+      width: 100%;
+    }
+    
+    .button {
+      width: 100%;
+    }
+  }
+  
