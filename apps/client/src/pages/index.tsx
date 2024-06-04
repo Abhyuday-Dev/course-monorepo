@@ -1,12 +1,14 @@
 import { useSession } from "next-auth/react";
-import AppBar from "./components/AppBar";
+import {getServerSession} from "next-auth";
+import { authOptions } from "./api/auth/[...nextauth]";
 
 export default function HomePage() {
-  const { data: session } = useSession();
+  const session =useSession();
+  console.log(session);
 
   return (
     <>
-      <AppBar />
+  
       <div style={{ padding: "2rem" }}>
         {session ? (
           <h1>Welcome</h1>
@@ -17,3 +19,27 @@ export default function HomePage() {
     </>
   );
 }
+
+
+
+
+
+
+// export async function getServerSideProps(context) {
+//     const session = await getServerSession(context.req, context.res, authOptions)
+
+//     if (!session) {
+//         return {
+//             redirect: {
+//                 destination: '/',
+                
+//             },
+//         }
+//     }
+
+//     return {
+//         props: {
+//             session,
+//         },
+//     }
+// }

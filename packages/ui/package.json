@@ -8,7 +8,8 @@
     "./code": "./src/code.tsx",
     "./signup": "./src/signup.tsx",
     "./signin": "./src/signin.tsx",
-    "./addCourse": "./src/addCourse.tsx"
+    "./addCourse": "./src/addCourse.tsx",
+    "./courseCard": "./src/courseCard.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

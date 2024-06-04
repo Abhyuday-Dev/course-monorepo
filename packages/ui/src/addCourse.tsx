@@ -41,6 +41,7 @@ export const AddCourse = (props: {
             label="Title"
             variant="outlined"
             className="input"
+            style={{marginBottom:"10px"}}
           />
           <TextField
             onChange={(e) => setDescription(e.target.value)}
@@ -48,6 +49,7 @@ export const AddCourse = (props: {
             label="Description"
             variant="outlined"
             className="input"
+            style={{marginBottom:"10px"}}
           />
           <TextField
             onChange={(e) => setImageLink(e.target.value)}
@@ -55,6 +57,7 @@ export const AddCourse = (props: {
             label="Cover Image"
             variant="outlined"
             className="input"
+            style={{marginBottom:"10px"}}
           />
           <TextField
             onChange={(e) => setPrice(e.target.value)}
@@ -62,6 +65,7 @@ export const AddCourse = (props: {
             label="Price"
             variant="outlined"
             className="input"
+            style={{marginBottom:"10px"}}
           />
             <FormControl variant="outlined" className="input">
             <InputLabel>Published</InputLabel>
@@ -69,6 +73,7 @@ export const AddCourse = (props: {
               value={isPublished}
               onChange={(e) => setispublished(e.target.value)}
               label="Published"
+              style={{marginBottom:"10px"}}
             >
               <MenuItem value="true">True</MenuItem>
               <MenuItem value="false">False</MenuItem>

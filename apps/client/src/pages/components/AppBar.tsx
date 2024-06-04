@@ -11,8 +11,10 @@ const AppBar = () => {
     return <></>;
   }
 
+  let name=null;
+
   if (session) {
-    
+    name=session.user.email[0].toUpperCase();
 
     return (
       <div
@@ -69,7 +71,7 @@ const AppBar = () => {
             borderRadius="50%"
             marginRight="15px"
           >
-            A
+            {name}
           </Typography>
           <Button
             style={{

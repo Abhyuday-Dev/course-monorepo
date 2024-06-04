@@ -1,5 +1,5 @@
 .main {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     background-color: #eeeeee;
@@ -21,7 +21,7 @@
     border-radius: 20px 0 0 20px;
     margin-top: 40px;
     width: 50%;
-    height: 400px;
+    height: 350px;
     background: url("https://img.freepik.com/premium-vector/boy-studying-with-computer-books_113065-228.jpg");
     background-size: cover;
     background-position: center;
@@ -31,10 +31,10 @@
     border-radius: 0 20px 20px 0;
     width: 50%;
     padding: 1.5rem 2rem;
+
   }
   
   .input {
-    margin-bottom: 14px;
     width: 100%;
   }
   
