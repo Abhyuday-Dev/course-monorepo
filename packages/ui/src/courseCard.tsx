@@ -2,6 +2,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { Button,Typography } from "@mui/material";
+import { useRouter } from 'next/router';
 
 type Course = {
     imageLink: string;
@@ -13,6 +14,8 @@ type Course = {
 
 
 export function CourseCard({ course }: { course: Course }) {
+  console.log(course._id);
+  const router = useRouter(); 
     
     return (
       <Card sx={{ width:"400px",maxWidth: 400, margin: "1.5rem" }}>
@@ -41,7 +44,7 @@ export function CourseCard({ course }: { course: Course }) {
             size="small"
             style={{backgroundColor:"#5624d0",fontWeight:"bold"}}
             onClick={() => {
-              
+              router.push(`/updateCourse/${course._id}`)
             }}
           >
             Update

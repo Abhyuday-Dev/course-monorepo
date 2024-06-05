@@ -15,11 +15,9 @@ export default async function handler(
 ) {
   // Check if the user is authenticated
   await ensureDbConnected();
-  console.log("herre db connected")
-
   // Create a new course
   const course = new Course(req.body);
-  console.log(req.body);
+  // console.log(req.body);
   await course.save();
   res.json({ message: "Course Created Successfully", courseId: course.id });
 }

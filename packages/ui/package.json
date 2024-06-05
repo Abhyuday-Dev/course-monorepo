@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx",
     "./signup": "./src/signup.tsx",
     "./signin": "./src/signin.tsx",
     "./addCourse": "./src/addCourse.tsx",
